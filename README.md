@@ -47,7 +47,7 @@ or attacks                        ↓
   Dashboard shows
   alert
 ```
-## Important — Connections & Environment
+## Connections & Environment
 
 This project requires three background services running simultaneously 
 before any Python script will work:
