@@ -1,5 +1,5 @@
 # smart-hotel-iot-security-system-simulation
-
+[![DOI](https://zenodo.org/badge/1202048598.svg)](https://doi.org/10.5281/zenodo.19439702)
 A Python-based IoT security simulation demonstrating defence in depth across door access control, camera command channels, and HVAC systems,using MQTT with TLS encryption and JWT authentication at device controller level.
 
 Three security-critical components, door access control, cameras, and HVAC are each simulated as Python scripts communicating over a real MQTT broker. 
@@ -86,7 +86,7 @@ pip install paho-mqtt pyjwt cryptography
 ## Note
 Attackers can compromise smart building IoT systems through various means including credential brute-force, replay attacks, Man-in-the-Middle 
 interception, firmware extraction and many more. This simulation specifically focuses only on **forged JWT token injection** across doors, cameras, and HVAC channels targeting the device authentication layer after broker access is assumed compromised.
-[![DOI](https://zenodo.org/badge/1202048598.svg)](https://doi.org/10.5281/zenodo.19439702)
+
 
 ## Simulation Video Here:
 https://drive.google.com/file/d/1j_Ra-9GeBWkfQtUZIdNyUqyucEQ2XBau/view?usp=drive_link
