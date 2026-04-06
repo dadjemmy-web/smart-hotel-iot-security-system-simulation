@@ -86,6 +86,7 @@ pip install paho-mqtt pyjwt cryptography
 ## Note
 Attackers can compromise smart building IoT systems through various means including credential brute-force, replay attacks, Man-in-the-Middle 
 interception, firmware extraction and many more. This simulation specifically focuses only on **forged JWT token injection** across doors, cameras, and HVAC channels targeting the device authentication layer after broker access is assumed compromised.
+[![DOI](https://zenodo.org/badge/1202048598.svg)](https://doi.org/10.5281/zenodo.19439702)
 
 ## Simulation Video Here:
 https://drive.google.com/file/d/1j_Ra-9GeBWkfQtUZIdNyUqyucEQ2XBau/view?usp=drive_link
