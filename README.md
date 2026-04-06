@@ -47,6 +47,24 @@ or attacks                        ↓
   Dashboard shows
   alert
 ```
+## Important — Connections & Environment
+
+This project requires three background services running simultaneously 
+before any Python script will work:
+
+- **Mosquitto MQTT Broker** — must be running on port 8883 with TLS certificates 
+  and a configured password file. Without this, no script can connect.
+
+- **Node-RED** — must be running with the project flow imported and the MQTT 
+  broker configured with TLS and correct credentials. The dashboard will not 
+  display anything without this.
+
+- **Python Environment** — requires `paho-mqtt`, `pyjwt`, and `cryptography` 
+  installed. Scripts will fail to import without these.
+
+> You cannot clone this repository and run the scripts directly. 
+> The broker, certificates, MQTT users, and Node-RED flow must all 
+> be configured first.
 
 ## Note
 Attackers can compromise smart building IoT systems through various means including credential brute-force, replay attacks, Man-in-the-Middle 
