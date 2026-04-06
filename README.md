@@ -47,25 +47,42 @@ or attacks                        ↓
   Dashboard shows
   alert
 ```
-## Connections & Environment
+## Prerequisites
 
-This project requires three background services running simultaneously 
-before any Python script will work:
+This project depends on three background services that must be running before executing any Python scripts. Please ensure the following are configured and active before use.
 
-- **Mosquitto MQTT Broker** — must be running on port 8883 with TLS certificates 
-  and a configured password file. Without this, no script can connect.
+---
 
-- **Node-RED** — must be running with the project flow imported and the MQTT 
-  broker configured with TLS and correct credentials. The dashboard will not 
-  display anything without this.
+### 1. 🦟 Mosquitto MQTT Broker
+- Must be running on **port 8883**
+- Requires **TLS certificates** to be generated and configured
+- Requires a **password file** with MQTT user credentials
 
-- **Python Environment** — requires `paho-mqtt`, `pyjwt`, and `cryptography` 
-  installed. Scripts will fail to import without these.
+> All scripts rely on a successful broker connection — this must be the first thing configured.
 
-> You cannot clone this repository and run the scripts directly. 
-> The broker, certificates, MQTT users, and Node-RED flow must all 
-> be configured first.
+---
 
+### 2. 🔴 Node-RED
+- Must be running with the **project flow imported**
+- The MQTT broker node must be configured with **TLS** and the correct credentials
+- The dashboard will only display data once this is fully set up
+
+---
+
+### 3. 🐍 Python Environment
+The following packages must be installed before running any scripts:
+
+```bash
+pip install paho-mqtt pyjwt cryptography
+```
+
+---
+
+> ⚠️ **Important**
+> 
+> This repository cannot be used by simply cloning and running the scripts.
+> The MQTT broker, TLS certificates, MQTT user credentials, and Node-RED flow
+> must all be configured as part of the initial setup.
 ## Note
 Attackers can compromise smart building IoT systems through various means including credential brute-force, replay attacks, Man-in-the-Middle 
 interception, firmware extraction and many more. This simulation specifically focuses only on **forged JWT token injection** across doors, cameras, and HVAC channels targeting the device authentication layer after broker access is assumed compromised.
