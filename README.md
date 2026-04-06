@@ -71,3 +71,4 @@ Attackers can compromise smart building IoT systems through various means includ
 interception, firmware extraction and many more. This simulation specifically focuses only on **forged JWT token injection** across doors, cameras, and HVAC channels targeting the device authentication layer after broker access is assumed compromised.
 
 ## Simulation Video Here:
+https://drive.google.com/file/d/1j_Ra-9GeBWkfQtUZIdNyUqyucEQ2XBau/view?usp=drive_link
