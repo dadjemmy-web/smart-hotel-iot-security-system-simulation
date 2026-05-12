@@ -90,4 +90,5 @@ interception, firmware extraction and many more. This simulation specifically fo
 [![DOI](https://zenodo.org/badge/1202048598.svg)](https://doi.org/10.5281/zenodo.19439702)
 
 ## Simulation Video Here:
-https://drive.google.com/file/d/1j_Ra-9GeBWkfQtUZIdNyUqyucEQ2XBau/view?usp=drive_link
+
+[Watch the full simulation here (https://youtu.be/DxGwOCYRe9E)
